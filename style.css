@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+/* start over there !! ---------------- */
+
+.loader{
+    width: 20vh;
+    height: 10vw;
+    overflow: hidden;
+    position: absolute;
+    
+} 
+
+.loader > div{
+    
+    height: 100px;
+    width: 100px;
+    border: 15px solid darkgrey;
+    border-top-color:blue ;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    animation:spin 1.15s infinite linear;
+
+}
+
+@keyframes spin {
+    100% {
+        transform:rotate(360deg);
+    }
+
+}
